@@ -51,24 +51,10 @@ class InvoiceView(APIView):
 
         return response
 
-    def delete(self, request, pk=5):
-        print("requets",request.data)
-        todo_to_delete =  self.get_object(pk)
-
-        todo_to_delete.delete()
-
+    def delete(self, request,pk):
+        instance =  self.get_object(pk)
+        instance.delete()
         return Response({
             'message': 'Invoice Deleted Successfully'
         })
     
-
-# {
-#   "customer": "pta",
-#   "transactions": [
-#     {
-#       "product": "m",
-#       "price": "10.20",
-#       "quantity": "1"
-#     }
-#   ]
-# }
