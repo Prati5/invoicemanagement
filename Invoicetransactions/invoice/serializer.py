@@ -86,7 +86,3 @@ class InvoiceSerializer(serializers.ModelSerializer):
         instance.customer = validated_data["customer"]
         instance.save()
         return instance
-
-# git remote set-url origin https://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@github.com/Prati5/invoicemanagement.git
-
-# git remote set-url origin https://{token}@github.com/Prati5/invoicemanagement.git
