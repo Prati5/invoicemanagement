@@ -11,18 +11,22 @@ Virtual environment
 Create the virtual environments using **python3 -m venv environment_name**
 Activate the venv by running this: source {your env name}/bin/activate
 Install the required packages mentioned in the requirements folder pip install -r requirements/requirements.txt
-Django Specific configurations
+
+
+**Django Specific configurations**
 Populate DB using below commands:
 python manage.py makemigrations
 python manage.py migrate
 
-Start server using below command:
+
+**Start server using below command:**
 python manage.py runserver
 Create superuser
 Create a superuser or access the Django management shell.
 python manage.py runserver
 
-Note:
+
+**Note:**
 To avoid commit python compiled files(.pyc) files please add these into .gitignore file *.pyc
 Before commit the code please use pep8 check. please refer below url:
 https://www.python.org/dev/peps/pep-0008/
